@@ -177,8 +177,11 @@
 % Resumo em português
 % -----------------------------------------------------------
 \begin{changemargin}{1cm}{1cm} 
- \textbf{Resumo} – O projeto tem como objetivo fazer a localização de dispositivos bluetooth (IBeacons) em ambientes fechados.
-
+ \textbf{Resumo} – A proposta do projeto é criar um sistema de localizaçao em tempo real de dispositivos bluetooth dentro de um local fechado.
+ O hardware consiste na criação de um dispositivo utilizando o ESP32, capaz de localizar outros dispositivos bluetooth, como IBeacons, através da triangulação destes dispositivos que denominamos "estações de rastreamento". 
+ As estações disponibilizaram as informações dos dispositivos encontrados através da internet, utilizando o protocolo MQTT e a plataforma Node-Red.
+ O Software consiste em um website, construído utilizando Node.js como servidor aplicacional, capaz de se conectar ao Node-Red e fazer a interpretação dos dados.
+ A plataforma é responsável por receber os dados e determinar qual é o dispositivo mais proximo dentro do raio da triangulação das estações.
  \vspace{\onelineskip}
  
  \noindent
